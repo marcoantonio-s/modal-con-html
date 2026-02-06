@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/87372a52e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>modal</title>
+</head>
+<body>
+    <div class="contenedor">
+        <dialog id="miDialogo">
+            <div class="content">
+                <div class="close">
+                    <i class="fa-solid fa-xmark" onclick="miDialogo.close()"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="text">
+                    <h2>¡Genial!</h2>
+                    <p>Funciona, ahora lo puedes cerrar</p>
+                </div>
+                <div class="content-btn">
+                    <button class="btn-modal" onclick="miDialogo.close()">Cerrar</button>
+                </div>
+            </div>
+        </dialog>
+        <button class="btn" onclick="miDialogo.showModal()">Abrir Modal</button>        
+    </div>    
+</body>
+</html>
